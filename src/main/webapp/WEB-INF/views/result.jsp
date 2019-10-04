@@ -12,9 +12,6 @@
 </head>
 <body>
 <h2>Condiment for sandwich</h2>
-<h3>${lettuce}</h3>
-<h3>${tomato}</h3>
-<h3>${mustard}</h3>
-<h3>${sprouts}</h3>
+<span>Condiment: ${condiment}</span>
 </body>
 </html>

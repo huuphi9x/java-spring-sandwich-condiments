@@ -14,16 +14,9 @@ public class SandwichCondiment {
         return "index";
     }
 
-    @GetMapping("/save")
-    public String saveCondiments(@RequestParam String lettuce,String tomato, String mustard, String sprouts, Model model) {
-        if (!(lettuce == null))
-            model.addAttribute("lettuce", "- Lettuce");
-        if (!(tomato == null))
-            model.addAttribute("tomato", "- Tomato");
-        if (!(mustard == null))
-            model.addAttribute("mustard", "- Mustard");
-        if (!(sprouts == null))
-            model.addAttribute("sprouts", "- Sprouts");
+    @PostMapping("/save")
+    public String saveCondiments(@RequestParam(name = "condiment", required = false) String condiment, Model model) {
+        model.addAttribute("condiment", condiment);
         return "result";
     }
 }

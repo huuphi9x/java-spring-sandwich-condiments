@@ -12,12 +12,12 @@
 </head>
 <body>
 <h1>Sandwich Condiments</h1>
-<form method="get" action="/save">
+<form method="post" action="/save">
     <p>
-    <input type="checkbox" name="lettuce" value="lettuce">Lettuce
-    <input type="checkbox" name="tomato" value="tomato">Tomato
-    <input type="checkbox" name="mustard" value="mustard">Mustard
-    <input type="checkbox" name="sprouts" value="sprouts">Sprouts
+    <input type="checkbox" name="condiment" value="Lettuce">Lettuce
+    <input type="checkbox" name="condiment" value="Tomato">Tomato
+    <input type="checkbox" name="condiment" value="Mustard">Mustard
+    <input type="checkbox" name="condiment" value="Sprouts">Sprouts
     </p>
 <input type="submit" value="save">
 </form>
